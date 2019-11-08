@@ -12,15 +12,15 @@ Original file is located at
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 # Commented out IPython magic to ensure Python compatibility.
-try:
+#try:
   # %tensorflow_version 只在 Colab 中使用。
 #   %tensorflow_version 2.x
-except Exception:
-  pass
+#except Exception:
+#  pass
 
 import tensorflow as tf
 
-tf.__version__
+#tf.__version__
 
 # 用于生成 GIF 图片
 !pip install imageio
