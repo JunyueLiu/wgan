@@ -23,7 +23,7 @@ import tensorflow as tf
 #tf.__version__
 
 # 用于生成 GIF 图片
-!pip install imageio
+# !pip install imageio
 
 import glob
 import imageio
@@ -35,7 +35,7 @@ from tensorflow.keras import layers
 import time
 import random
 import sklearn.datasets
-from IPython import display
+# from IPython import display
 
 MODE = 'wgan-gp' # wgan or wgan-gp
 DATASET = '8gaussians' # 8gaussians, 25gaussians, swissroll
@@ -422,18 +422,18 @@ with imageio.get_writer(anim_file, mode='I') as writer:
   image = imageio.imread(filename)
   writer.append_data(image)
 
-import IPython
-if IPython.version_info > (6,2,0,''):
-  display.Image(filename=anim_file)
+#import IPython
+#if IPython.version_info > (6,2,0,''):
+#  display.Image(filename=anim_file)
 
 """如果您正在使用 Colab，您可以通过如下代码下载动画："""
 
-try:
-  from google.colab import files
-except ImportError:
-   pass
-else:
-  files.download(anim_file)
+#try:
+#  from google.colab import files
+#except ImportError:
+#   pass
+#else:
+#  files.download(anim_file)
 
 """## 下一步
 
