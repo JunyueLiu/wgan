@@ -392,7 +392,7 @@ def train(epochs):
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%time
-# train(EPOCHS)
+train(EPOCHS)
 
 """恢复最新的检查点。"""
 
